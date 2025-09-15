@@ -29,6 +29,23 @@ const noteSchema = new mongoose.Schema({
     type: Boolean,
     default: false
   },
+  // AI-powered features
+  extractedInfo: {
+    people: [String],
+    topics: [String],
+    actions: [String],
+    locations: [String]
+  },
+  reminders: [{
+    text: String,
+    date: Date,
+    originalText: String,
+    isCompleted: { type: Boolean, default: false }
+  }],
+  audioTranscription: {
+    type: String,
+    default: null
+  },
   createdAt: {
     type: Date,
     default: Date.now
