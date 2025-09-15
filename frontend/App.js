@@ -96,7 +96,7 @@ export default function App() {
   };
 
   const API_BASE_URL = 'http://192.168.10.131:5000/api';
-  const OPENAI_API_KEY = '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';
+  const OPENAI_API_KEY = process.env.EXPO_PUBLIC_OPENAI_API_KEY;
 
   // Sync local notes with backend when connection is restored
   const syncLocalNotesWithBackend = async () => {
@@ -629,7 +629,7 @@ export default function App() {
       const response = await fetch('https://api.openai.com/v1/chat/completions', {
         method: 'POST',
         headers: {
-          'Authorization': 'Bearer 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',
+          'Authorization': `Bearer ${OPENAI_API_KEY}`,
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
@@ -994,7 +994,7 @@ Svara BARA med JSON, inget annat.`
       const response = await fetch('https://api.openai.com/v1/chat/completions', {
         method: 'POST',
         headers: {
-          'Authorization': 'Bearer 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',
+          'Authorization': `Bearer ${OPENAI_API_KEY}`,
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
@@ -1176,7 +1176,7 @@ Svara BARA med JSON, inget annat.`
       const response = await fetch('https://api.openai.com/v1/chat/completions', {
         method: 'POST',
         headers: {
-          'Authorization': 'Bearer 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',
+          'Authorization': `Bearer ${OPENAI_API_KEY}`,
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
@@ -1300,7 +1300,7 @@ Svara BARA med JSON, inget annat.`
       const response = await fetch('https://api.openai.com/v1/chat/completions', {
         method: 'POST',
         headers: {
-          'Authorization': 'Bearer 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',
+          'Authorization': `Bearer ${OPENAI_API_KEY}`,
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
