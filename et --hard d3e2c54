@@ -1,0 +1,4 @@
+[33m00dc0b1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m Remove OpenAI API key from code and use environment variable
+[33md57b2f2[m Add AI-powered link generation with clickable web links and map integration
+[33md3e2c54[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m Add professional backend API with MongoDB integration
+[33meb6981d[m Initial commit
